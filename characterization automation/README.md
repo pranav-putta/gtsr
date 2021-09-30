@@ -10,7 +10,7 @@ and aerodynamic drag as a quadratic function. By plotting an Acceleration vs. Ve
 to determine the coefficients of these functions.
 
 This gives us the following equation.
-https://render.githubusercontent.com/render/math?math=a = crr1 + crr2 * v + k * v^2
+$$ a = crr1 + crr2 * v + k * v^2 $$
 
 This script also tests how well the model is at predicting velocity from actual historical data. Using topological analysis, the program
 will automatically select intervals during a race where the car is coasting. Then, we can use our model of rolling resistance to predict
