@@ -1,0 +1,24 @@
+## Data
+resolution: 0.25 # seconds between each datapoint
+train: 'data/coastdown_test.csv' # file with testing data
+test: 'data/validation.csv' # file with validation data
+
+## Car Constants
+mass: 360 # kg
+wheel_radius: 0.278 # meters
+
+# Program
+debug: False # show all individual graphs
+
+# Fit parameters
+n_poly_degree: 2
+
+## Interval Creation
+prune: True # prune coasting intervals against sporadic behavior
+block_width: 2 # seconds
+block_height_threshold: 0.5 # m/s
+peak_prominence: 4 # m/s
+min_interval_size: 3 # seconds
+max_accel_held: 0.5 # seconds
+max_brake_held: 0 # seconds
+
